@@ -20,41 +20,41 @@ main {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
     background-color: #333;
     color: white;
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
 }
 
-nav {
-    width: 100%;
-    background-color: #555;
-    display: flex;
-    justify-content: center;
-}
-
-#menu {
-    display: flex;
-    gap: 20px;
+.navbar {
+    background-color: #333;
     padding: 10px 0;
 }
 
-#menu li {
-    list-style: none;
-}
-
-#menu a {
-    text-decoration: none;
+.navbar-brand, 
+.navbar-nav .nav-link {
     color: white;
     padding: 8px 16px;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#menu a:hover {
+.navbar-nav .nav-link:hover {
     background-color: #4CAF50;
+    color: white;
 }
+
+body {
+    padding-top: 60px;
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 20px;
+}
+
 
 #fraseInicio {
     display: flex;
